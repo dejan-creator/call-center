@@ -230,6 +230,6 @@ GROUP BY ID;
 
 CREATE VIEW Productivity AS
 SELECT ID, Weekend, Emp_ID, Name, Inbound, Outbound, AVG_Call_Handeled, Call_Handeled, Total_calls,
-ROUND((Call_Handeled/Total_calls)*100,2) as Productivity
+(Call_Handeled/Total_calls)*1 as Productivity
 from total_calls
 GROUP BY ID;
